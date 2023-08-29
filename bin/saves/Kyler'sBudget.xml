@@ -1,0 +1,51 @@
+<Sheet>Kyler's Budget</Sheet>
+<Savings>
+	<SavingsSection>
+		<Account>BOA Checking</Account>
+		<SavingsValue>4593.18</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>BOA Savings</Account>
+		<SavingsValue>9113.48</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>Marcus</Account>
+		<SavingsValue>15827.07</SavingsValue>
+	</SavingsSection>
+</Savings>
+<Income>
+	<IncomeSection>
+		<Source>Clarity</Source>
+		<IncomeHourly>27.59</IncomeHourly>
+		<IncomeDaily>157.65714285714284</IncomeDaily>
+		<IncomeWeekly>1103.6</IncomeWeekly>
+		<IncomeBiweekly>2207.2</IncomeBiweekly>
+		<IncomeMonthly>4887.371428571429</IncomeMonthly>
+		<IncomeYearly>57544.85714285714</IncomeYearly>
+		<TaxHourly>0.0</TaxHourly>
+		<TaxDaily>0.0</TaxDaily>
+		<TaxWeekly>0.0</TaxWeekly>
+		<TaxBiweekly>0.0</TaxBiweekly>
+		<TaxMonthly>0.0</TaxMonthly>
+		<TaxYearly>0.0</TaxYearly>
+		<TaxPercent>0.0</TaxPercent>
+		<HoursWorked>40.0</HoursWorked>
+	</IncomeSection>
+	<IncomeSection>
+		<Source>Rent</Source>
+		<IncomeHourly>5.31</IncomeHourly>
+		<IncomeDaily>30.342857142857138</IncomeDaily>
+		<IncomeWeekly>212.39999999999998</IncomeWeekly>
+		<IncomeBiweekly>424.79999999999995</IncomeBiweekly>
+		<IncomeMonthly>940.6285714285714</IncomeMonthly>
+		<IncomeYearly>11075.142857142855</IncomeYearly>
+		<TaxHourly>0.0</TaxHourly>
+		<TaxDaily>0.0</TaxDaily>
+		<TaxWeekly>0.0</TaxWeekly>
+		<TaxBiweekly>0.0</TaxBiweekly>
+		<TaxMonthly>0.0</TaxMonthly>
+		<TaxYearly>0.0</TaxYearly>
+		<TaxPercent>0.0</TaxPercent>
+		<HoursWorked>40.0</HoursWorked>
+	</IncomeSection>
+</Income>
