@@ -83,6 +83,8 @@ public class Sheet {
     	subtractValues.addAll(houseExpenseValues);
     	subtractValues.addAll(otherExpenseValues);
     	subtractValues.addAll(otherDebtValues);
+    	System.out.println(addValues);
+    	System.out.println(subtractValues);
     	
     	dailyTotal = BudgetCalculator.sumValues(addValues, subtractValues);
 	}
@@ -94,7 +96,7 @@ public class Sheet {
     	ArrayList<String> sectionXml = XMLManager.getEncapsulatedXML(tabXml, sectionTag);
     	
     	while(!sectionXml.isEmpty()) {
-			String valueString = XMLManager.getSpecificValueFromXMLFile(sectionXml, tag);
+			String valueString = XMLManager.getSpecificValueFromXMLFileFirst(sectionXml, tag);
 			double value = Double.valueOf(valueString);
 			values.add(value);
 			

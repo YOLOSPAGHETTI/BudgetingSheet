@@ -51,12 +51,12 @@ public class ExpenseTab extends BudgetTab {
 		ArrayList<String> expenseSectionXml = XMLManager.getEncapsulatedXML(expenseXml, Constants.EXPENSE_SECTION);
 		
 		while(!expenseSectionXml.isEmpty()) {
-			String expense = XMLManager.getSpecificValueFromXMLFile(expenseSectionXml, Constants.EXPENSE);
-			double paymentDaily = XMLManager.getDoubleValueFromXMLFile(expenseSectionXml, Constants.PAYMENT_DAILY);
-			double paymentWeekly = XMLManager.getDoubleValueFromXMLFile(expenseSectionXml, Constants.PAYMENT_WEEKLY);
-			double paymentBiweekly = XMLManager.getDoubleValueFromXMLFile(expenseSectionXml, Constants.PAYMENT_BIWEEKLY);
-			double paymentMonthly = XMLManager.getDoubleValueFromXMLFile(expenseSectionXml, Constants.PAYMENT_MONTHLY);
-			double paymentYearly = XMLManager.getDoubleValueFromXMLFile(expenseSectionXml, Constants.PAYMENT_YEARLY);
+			String expense = XMLManager.getSpecificValueFromXMLFileFirst(expenseSectionXml, Constants.EXPENSE);
+			double paymentDaily = XMLManager.getDoubleValueFromXMLFileFirst(expenseSectionXml, Constants.PAYMENT_DAILY);
+			double paymentWeekly = XMLManager.getDoubleValueFromXMLFileFirst(expenseSectionXml, Constants.PAYMENT_WEEKLY);
+			double paymentBiweekly = XMLManager.getDoubleValueFromXMLFileFirst(expenseSectionXml, Constants.PAYMENT_BIWEEKLY);
+			double paymentMonthly = XMLManager.getDoubleValueFromXMLFileFirst(expenseSectionXml, Constants.PAYMENT_MONTHLY);
+			double paymentYearly = XMLManager.getDoubleValueFromXMLFileFirst(expenseSectionXml, Constants.PAYMENT_YEARLY);
 			
 			String timePeriod = getTimePeriod();
 			BudgetValue payment = new BudgetValue(paymentDaily, paymentWeekly, paymentBiweekly, paymentMonthly, paymentYearly);

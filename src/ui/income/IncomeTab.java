@@ -221,21 +221,21 @@ public class IncomeTab extends BudgetTab {
 		ArrayList<String> incomeSectionXml = XMLManager.getEncapsulatedXML(incomeXml, Constants.INCOME_SECTION);
 		
 		while(!incomeSectionXml.isEmpty()) {
-			String source = XMLManager.getSpecificValueFromXMLFile(incomeSectionXml, Constants.SOURCE);
-			double incomeHourly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_HOURLY);
-			double incomeDaily = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_DAILY);
-			double incomeWeekly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_WEEKLY);
-			double incomeBiweekly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_BIWEEKLY);
-			double incomeMonthly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_MONTHLY);
-			double incomeYearly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.INCOME_YEARLY);
-			double taxHourly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_HOURLY);
-			double taxDaily = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_DAILY);
-			double taxWeekly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_WEEKLY);
-			double taxBiweekly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_BIWEEKLY);
-			double taxMonthly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_MONTHLY);
-			double taxYearly = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_YEARLY);
-			double taxPercent = XMLManager.getDoubleValueFromXMLFile(incomeSectionXml, Constants.TAX_PERCENT);
-			int hoursWorked = XMLManager.getIntegerValueFromXMLFile(incomeSectionXml, Constants.HOURS_WORKED);
+			String source = XMLManager.getSpecificValueFromXMLFileFirst(incomeSectionXml, Constants.SOURCE);
+			double incomeHourly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_HOURLY);
+			double incomeDaily = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_DAILY);
+			double incomeWeekly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_WEEKLY);
+			double incomeBiweekly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_BIWEEKLY);
+			double incomeMonthly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_MONTHLY);
+			double incomeYearly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.INCOME_YEARLY);
+			double taxHourly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_HOURLY);
+			double taxDaily = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_DAILY);
+			double taxWeekly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_WEEKLY);
+			double taxBiweekly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_BIWEEKLY);
+			double taxMonthly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_MONTHLY);
+			double taxYearly = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_YEARLY);
+			double taxPercent = XMLManager.getDoubleValueFromXMLFileFirst(incomeSectionXml, Constants.TAX_PERCENT);
+			int hoursWorked = XMLManager.getIntegerValueFromXMLFileFirst(incomeSectionXml, Constants.HOURS_WORKED);
 			
 			String timePeriod = comboTimePeriod.getSelectedItem().toString();
 			IncomeValue income = new IncomeValue(incomeHourly, incomeDaily, incomeWeekly, incomeBiweekly, incomeMonthly, incomeYearly);

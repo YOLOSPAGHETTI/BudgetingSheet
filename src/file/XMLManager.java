@@ -77,6 +77,20 @@ public class XMLManager {
 		return value.toString();
 	}
 	
+	public static String getSpecificValueFromXMLFileFirst(ArrayList<String> xmlLines, String tag) {
+		String value = "";
+		
+		for(String xml : xmlLines) {
+			String lineTag = getTagFromXMLLine(xml);
+			if(lineTag.equals(tag)) {
+				value = getValueFromXMLLine(xml);
+				break;
+			}
+		}
+		
+		return value;
+	}
+	
 	public static String getSpecificValueFromXMLFile(ArrayList<String> xmlLines, String tag) {
 		String value = "";
 		
@@ -90,6 +104,21 @@ public class XMLManager {
 		return value;
 	}
 	
+	public static int getIntegerValueFromXMLFileFirst(ArrayList<String> xmlLines, String tag) {
+		String valueString = getSpecificValueFromXMLFileFirst(xmlLines, tag);
+		int value = 0;
+		if(!valueString.equals("")) {
+			try {
+				double valueDouble = Double.parseDouble(valueString);
+				value = (int)Math.round(valueDouble);
+			}
+			catch(NumberFormatException e) {
+				value = -1;
+			}
+		}
+		return value;
+	}
+	
 	public static int getIntegerValueFromXMLFile(ArrayList<String> xmlLines, String tag) {
 		String valueString = getSpecificValueFromXMLFile(xmlLines, tag);
 		int value = 0;
@@ -97,6 +126,20 @@ public class XMLManager {
 			try {
 				double valueDouble = Double.parseDouble(valueString);
 				value = (int)Math.round(valueDouble);
+			}
+			catch(NumberFormatException e) {
+				value = -1;
+			}
+		}
+		return value;
+	}
+	
+	public static double getDoubleValueFromXMLFileFirst(ArrayList<String> xmlLines, String tag) {
+		String valueString = getSpecificValueFromXMLFileFirst(xmlLines, tag);
+		double value = 0;
+		if(!valueString.equals("")) {
+			try {
+				value = Double.parseDouble(valueString);
 			}
 			catch(NumberFormatException e) {
 				value = -1;
@@ -125,7 +168,7 @@ public class XMLManager {
 		boolean isEncapsulated = false;
 		for(String xml : xmlLines) {
 			String lineTag = getTagFromXMLLine(xml);
-			if(lineTag.equals(tag)) {
+			if(lineTag.equals(tag) || lineTag.equals("/"+tag)) {
 				isEncapsulated = !isEncapsulated;
 			}
 			else if(isEncapsulated) {

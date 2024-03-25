@@ -25,15 +25,16 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
+import calc.BudgetValue;
 import calc.NumberFormatter;
 import ref.Constants;
 import sheet.SheetManager;
 
 public class CalendarTab extends Tab {
-	protected JComponent monthPanel;
-	protected JComponent yearPanel;
+	protected JComponent monthPanel, yearPanel, disposablePanel;
 	private Dimension screenSize;
 	private JLabel labelMonth, labelYear;
+	private JLabel labelDisposableTitle, labelDisposableDaily, labelDisposableWeekly, labelDisposableMonthly, labelDisposableYearly;
 	private JButton buttonPrev, buttonNext;
     private JTable tableCalendar;
     private JComboBox<String> comboYear;
@@ -76,7 +77,7 @@ public class CalendarTab extends Tab {
         addDefaultXBuffer(monthPanel);
         monthPanel.add(labelMonth);
         addDefaultXBuffer(monthPanel);
-        monthPanel.add(buttonNext);
+        monthPanel.add(buttonNext);     
         scrollPanel.add(monthPanel);
         addDefaultYBuffer(scrollPanel);
         
@@ -96,6 +97,40 @@ public class CalendarTab extends Tab {
         yearPanel.add(comboYear);
         scrollPanel.add(yearPanel);
         addDefaultYBuffer(scrollPanel);
+        
+        // Disposable Panel
+        disposablePanel = new JPanel(false);
+        disposablePanel.setLayout(new BoxLayout(disposablePanel, BoxLayout.X_AXIS));
+        
+        labelDisposableTitle = new JLabel("Disposable/Savings::");
+        labelDisposableTitle.setFont(new Font("Serif", Font.PLAIN, Constants.HEADER));
+        
+        sheetManager.getCurrentSheet().calculateDailyTotal();
+        double dailyTotal = sheetManager.getCurrentSheet().getDailyTotal();
+        BudgetValue total = new BudgetValue(dailyTotal, Constants.DAILY);
+        double weeklyTotal = total.getWeeklyValue();
+        double monthlyTotal = total.getMonthlyValue();
+        double yearlyTotal = total.getYearlyValue();
+        
+        labelDisposableDaily = new JLabel("Daily: " + NumberFormatter.formatDoubleToCurrency(dailyTotal));
+        labelDisposableDaily.setFont(new Font("Serif", Font.PLAIN, Constants.LARGE));
+        labelDisposableWeekly = new JLabel("Weekly: " + NumberFormatter.formatDoubleToCurrency(weeklyTotal));
+        labelDisposableWeekly.setFont(new Font("Serif", Font.PLAIN, Constants.LARGE));
+        labelDisposableMonthly = new JLabel("Monthly: " + NumberFormatter.formatDoubleToCurrency(monthlyTotal));
+        labelDisposableMonthly.setFont(new Font("Serif", Font.PLAIN, Constants.LARGE));
+        labelDisposableYearly = new JLabel("Yearly: " + NumberFormatter.formatDoubleToCurrency(yearlyTotal));
+        labelDisposableYearly.setFont(new Font("Serif", Font.PLAIN, Constants.LARGE));
+        
+        disposablePanel.add(labelDisposableTitle);
+        addDefaultXBuffer(disposablePanel);
+        disposablePanel.add(labelDisposableDaily);
+        addDefaultXBuffer(disposablePanel);
+        disposablePanel.add(labelDisposableWeekly);
+        addDefaultXBuffer(disposablePanel);
+        disposablePanel.add(labelDisposableMonthly);
+        addDefaultXBuffer(disposablePanel);
+        disposablePanel.add(labelDisposableYearly);
+        scrollPanel.add(disposablePanel);
         
         // Calendar
         modelTableCalendar = new DefaultTableModel(){public boolean isCellEditable(int rowIndex, int mColIndex){return false;}};
@@ -272,7 +307,7 @@ public class CalendarTab extends Tab {
 	    	daysAfterToday = ChronoUnit.DAYS.between(startDate,endDate);
     	}
     	catch(DateTimeParseException e) {
-    		e.printStackTrace();
+    		//e.printStackTrace();
     	}
     	
     	return daysAfterToday;

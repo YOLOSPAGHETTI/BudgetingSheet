@@ -109,7 +109,9 @@ public class BudgetSection {
 	
 	public void setFieldsToTimePeriod(String timePeriod) {
 		String currency = NumberFormatter.formatDoubleToCurrency(value.getValueForTimePeriod(timePeriod));
-		valueBox.setText(currency);
+		if(valueBox != null) {
+			valueBox.setText(currency);
+		}
 	}
 	
 	public void updateValuesToMatchTextFields(String timePeriod) {
@@ -120,8 +122,15 @@ public class BudgetSection {
 	}
 	
 	public void remove() {
-		nameBox.remove();
-		valueBox.remove();
+		if(nameBox != null) {
+			nameBox.remove();
+		}
+		
+		if(valueBox != null) {
+			valueBox.remove();
+		}
+		
+		
 		panel.remove(buttonRemove);
 		panel.remove(bottomBuffer);
 	}

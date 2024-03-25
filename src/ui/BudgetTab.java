@@ -164,7 +164,7 @@ public class BudgetTab extends Tab {
 	
 	public void createSection(String name, String timePeriod, BudgetValue value) {
 		BudgetSection section = new BudgetSection(this, sections.size(), name, value, scrollPanel);
-		section.init(timePeriod);
+		section.init(timePeriod, name, value.getValueForTimePeriod(timePeriod)+"");
 		sections.add(section);
 		
 		refreshForTimePeriod(timePeriod);

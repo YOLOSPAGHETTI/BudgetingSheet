@@ -142,8 +142,8 @@ public class SavingsTab extends BudgetTab {
 		ArrayList<String> savingsSectionXml = XMLManager.getEncapsulatedXML(savingsXml, Constants.SAVINGS_SECTION);
 		
 		while(!savingsSectionXml.isEmpty()) {
-			String account = XMLManager.getSpecificValueFromXMLFile(savingsSectionXml, Constants.ACCOUNT);
-			double savingsValue = XMLManager.getDoubleValueFromXMLFile(savingsSectionXml, Constants.SAVINGS_VALUE);
+			String account = XMLManager.getSpecificValueFromXMLFileFirst(savingsSectionXml, Constants.ACCOUNT);
+			double savingsValue = XMLManager.getDoubleValueFromXMLFileFirst(savingsSectionXml, Constants.SAVINGS_VALUE);
 			
 			createSection(account, savingsValue);
 			
