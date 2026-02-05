@@ -1,6 +1,7 @@
 package ui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Toolkit;
@@ -53,6 +54,7 @@ public class MainFrame extends JPanel {
 		sheetManager = new SheetManager(tabManager);
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
+		UIManager.put("TabbedPane.selected", Color.LIGHT_GRAY);
         
 		JComponent panel1 = addTab(tabbedPane, "Add/Load Sheets", 1);
         loadTab = new LoadTab(sheetManager, panel1);

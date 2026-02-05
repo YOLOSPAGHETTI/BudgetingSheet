@@ -72,19 +72,25 @@ public class Sheet {
     	
     	ArrayList<Double> incomeValues = getValues(saveXml, Constants.INCOME, Constants.INCOME_SECTION, Constants.INCOME_DAILY);
     	addValues.addAll(incomeValues);
+    	System.out.println("incomeValues: " + incomeValues);
     	
     	ArrayList<Double> incomeTaxValues = getValues(saveXml, Constants.INCOME, Constants.INCOME_SECTION, Constants.TAX_DAILY);
     	ArrayList<Double> carExpenseValues = getValues(saveXml, Constants.CAR_EXPENSES, Constants.EXPENSE_SECTION, Constants.PAYMENT_DAILY);
     	ArrayList<Double> houseExpenseValues = getValues(saveXml, Constants.HOUSING_EXPENSES, Constants.EXPENSE_SECTION, Constants.PAYMENT_DAILY);
     	ArrayList<Double> otherExpenseValues = getValues(saveXml, Constants.OTHER_EXPENSES, Constants.EXPENSE_SECTION, Constants.PAYMENT_DAILY);
     	ArrayList<Double> otherDebtValues = getValues(saveXml, Constants.OTHER_DEBT, Constants.EXPENSE_SECTION, Constants.PAYMENT_DAILY);
+    	System.out.println("incomeTaxValues: " + incomeTaxValues);
+    	System.out.println("carExpenseValues: " + carExpenseValues);
+    	System.out.println("houseExpenseValues: " + houseExpenseValues);
+    	System.out.println("otherExpenseValues: " + otherExpenseValues);
+    	System.out.println("otherDebtValues: " + otherDebtValues);
     	subtractValues.addAll(incomeTaxValues);
     	subtractValues.addAll(carExpenseValues);
     	subtractValues.addAll(houseExpenseValues);
     	subtractValues.addAll(otherExpenseValues);
     	subtractValues.addAll(otherDebtValues);
-    	System.out.println(addValues);
-    	System.out.println(subtractValues);
+    	//System.out.println("addValues: " + addValues);
+    	//System.out.println("subtractValues: " + subtractValues);
     	
     	dailyTotal = BudgetCalculator.sumValues(addValues, subtractValues);
 	}

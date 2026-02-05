@@ -1,0 +1,92 @@
+<Sheet>Kelly's Budget</Sheet>
+<Savings>
+	<SavingsSection>
+		<Account>Savings</Account>
+		<SavingsValue>89600.0</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>CD1</Account>
+		<SavingsValue>10100.0</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>CD2</Account>
+		<SavingsValue>10100.0</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>Checking</Account>
+		<SavingsValue>7400.0</SavingsValue>
+	</SavingsSection>
+</Savings>
+<Income>
+	<IncomeSection>
+		<Source>Petco</Source>
+		<IncomeHourly>22.115107913669064</IncomeHourly>
+		<IncomeDaily>126.32876712328768</IncomeDaily>
+		<IncomeWeekly>886.7307692307693</IncomeWeekly>
+		<IncomeBiweekly>1773.4615384615386</IncomeBiweekly>
+		<IncomeMonthly>3842.5</IncomeMonthly>
+		<IncomeYearly>46110.0</IncomeYearly>
+		<TaxHourly>0.0</TaxHourly>
+		<TaxDaily>0.0</TaxDaily>
+		<TaxWeekly>0.0</TaxWeekly>
+		<TaxBiweekly>0.0</TaxBiweekly>
+		<TaxMonthly>0.0</TaxMonthly>
+		<TaxYearly>0.0</TaxYearly>
+		<TaxPercent>0.0</TaxPercent>
+		<HoursWorked>40.0</HoursWorked>
+	</IncomeSection>
+</Income>
+<OtherExpenses>
+	<ExpenseSection>
+		<Expense>Food</Expense>
+		<PaymentDaily>9.67741935483871</PaymentDaily>
+		<PaymentWeekly>75.0</PaymentWeekly>
+		<PaymentBiweekly>150.0</PaymentBiweekly>
+		<PaymentMonthly>300.0</PaymentMonthly>
+		<PaymentYearly>3600.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Subscriptions</Expense>
+		<PaymentDaily>2.5806451612903225</PaymentDaily>
+		<PaymentWeekly>20.0</PaymentWeekly>
+		<PaymentBiweekly>40.0</PaymentBiweekly>
+		<PaymentMonthly>80.0</PaymentMonthly>
+		<PaymentYearly>960.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Discretionary</Expense>
+		<PaymentDaily>7.741935483870968</PaymentDaily>
+		<PaymentWeekly>60.0</PaymentWeekly>
+		<PaymentBiweekly>120.0</PaymentBiweekly>
+		<PaymentMonthly>240.0</PaymentMonthly>
+		<PaymentYearly>2880.0</PaymentYearly>
+	</ExpenseSection>
+</OtherExpenses>
+<HousingExpenses>
+	<ExpenseSection>
+		<Expense>Rent</Expense>
+		<PaymentDaily>27.419354838709676</PaymentDaily>
+		<PaymentWeekly>212.5</PaymentWeekly>
+		<PaymentBiweekly>425.0</PaymentBiweekly>
+		<PaymentMonthly>850.0</PaymentMonthly>
+		<PaymentYearly>10200.0</PaymentYearly>
+	</ExpenseSection>
+</HousingExpenses>
+<CarExpenses>
+	<ExpenseSection>
+		<Expense>Gas</Expense>
+		<PaymentDaily>3.870967741935484</PaymentDaily>
+		<PaymentWeekly>30.0</PaymentWeekly>
+		<PaymentBiweekly>60.0</PaymentBiweekly>
+		<PaymentMonthly>120.0</PaymentMonthly>
+		<PaymentYearly>1440.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Insurance</Expense>
+		<PaymentDaily>2.6774193548387095</PaymentDaily>
+		<PaymentWeekly>20.75</PaymentWeekly>
+		<PaymentBiweekly>41.5</PaymentBiweekly>
+		<PaymentMonthly>83.0</PaymentMonthly>
+		<PaymentYearly>996.0</PaymentYearly>
+	</ExpenseSection>
+</CarExpenses>

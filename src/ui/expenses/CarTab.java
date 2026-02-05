@@ -21,6 +21,7 @@ public class CarTab extends ExpenseTab {
 		createSection("Loan");
 		createSection("Insurance");
 		createSection("Gas");
+		createSection("Property Tax");
 	}
 	
 	@Override

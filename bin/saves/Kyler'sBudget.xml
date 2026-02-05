@@ -1,100 +1,13 @@
 <Sheet>Kyler's Budget</Sheet>
-<Savings>
-	<SavingsSection>
-		<Account>Marcus</Account>
-		<SavingsValue>15827.07</SavingsValue>
-	</SavingsSection>
-	<SavingsSection>
-		<Account>BOA Savings</Account>
-		<SavingsValue>9113.48</SavingsValue>
-	</SavingsSection>
-	<SavingsSection>
-		<Account>BOA Checking</Account>
-		<SavingsValue>7942.54</SavingsValue>
-	</SavingsSection>
-</Savings>
-<HousingExpenses>
-		<Expense>Mortgage</Expense>
-		<PaymentDaily>45.329032258064515</PaymentDaily>
-		<PaymentWeekly>351.3</PaymentWeekly>
-		<PaymentBiweekly>702.6</PaymentBiweekly>
-		<PaymentMonthly>1405.2</PaymentMonthly>
-		<PaymentYearly>16862.4</PaymentYearly>
-		<Expense>HOA</Expense>
-		<PaymentDaily>9.193548387096774</PaymentDaily>
-		<PaymentWeekly>71.25</PaymentWeekly>
-		<PaymentBiweekly>142.5</PaymentBiweekly>
-		<PaymentMonthly>285.0</PaymentMonthly>
-		<PaymentYearly>3420.0</PaymentYearly>
-		<Expense>Income Tax</Expense>
-		<PaymentDaily>5.660967741935484</PaymentDaily>
-		<PaymentWeekly>43.8725</PaymentWeekly>
-		<PaymentBiweekly>87.745</PaymentBiweekly>
-		<PaymentMonthly>175.49</PaymentMonthly>
-		<PaymentYearly>2105.88</PaymentYearly>
-		<PaymentDaily>1.935483870967742</PaymentDaily>
-		<PaymentWeekly>15.0</PaymentWeekly>
-		<PaymentBiweekly>30.0</PaymentBiweekly>
-		<PaymentMonthly>60.0</PaymentMonthly>
-		<PaymentYearly>720.0</PaymentYearly>
-		<Expense>Electric</Expense>
-		<PaymentDaily>9.67741935483871</PaymentDaily>
-		<PaymentWeekly>75.0</PaymentWeekly>
-		<PaymentBiweekly>150.0</PaymentBiweekly>
-		<PaymentMonthly>300.0</PaymentMonthly>
-		<PaymentYearly>3600.0</PaymentYearly>
-	<ExpenseSection>
-		<Expense>Internet</Expense>
-		<PaymentDaily>3.3870967741935485</PaymentDaily>
-		<PaymentWeekly>26.25</PaymentWeekly>
-		<PaymentBiweekly>52.5</PaymentBiweekly>
-		<PaymentMonthly>105.0</PaymentMonthly>
-		<PaymentYearly>1260.0</PaymentYearly>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Water</Expense>
-		<PaymentDaily>0.6129032258064516</PaymentDaily>
-		<PaymentWeekly>4.75</PaymentWeekly>
-		<PaymentBiweekly>9.5</PaymentBiweekly>
-		<PaymentMonthly>19.0</PaymentMonthly>
-		<PaymentYearly>228.0</PaymentYearly>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Sewage</Expense>
-		<PaymentDaily>1.6129032258064515</PaymentDaily>
-		<PaymentWeekly>12.5</PaymentWeekly>
-		<PaymentBiweekly>25.0</PaymentBiweekly>
-		<PaymentMonthly>50.0</PaymentMonthly>
-		<PaymentYearly>600.0</PaymentYearly>
-	</ExpenseSection>
-</HousingExpenses>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Property Tax</Expense>
-	</ExpenseSection>
-	<ExpenseSection>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Gas</Expense>
-	</ExpenseSection>
 <Income>
 	<IncomeSection>
 		<Source>Rent</Source>
-		<IncomeHourly>5.3125</IncomeHourly>
-		<IncomeDaily>30.357142857142858</IncomeDaily>
-		<IncomeWeekly>212.5</IncomeWeekly>
-		<IncomeBiweekly>425.0</IncomeBiweekly>
-		<IncomeMonthly>850.0</IncomeMonthly>
-		<IncomeYearly>11050.0</IncomeYearly>
+		<IncomeHourly>4.8</IncomeHourly>
+		<IncomeDaily>27.428571428571427</IncomeDaily>
+		<IncomeWeekly>192.0</IncomeWeekly>
+		<IncomeBiweekly>384.0</IncomeBiweekly>
+		<IncomeMonthly>850.2857142857143</IncomeMonthly>
+		<IncomeYearly>10011.42857142857</IncomeYearly>
 		<TaxHourly>0.0</TaxHourly>
 		<TaxDaily>0.0</TaxDaily>
 		<TaxWeekly>0.0</TaxWeekly>
@@ -106,12 +19,12 @@
 	</IncomeSection>
 	<IncomeSection>
 		<Source>Clarity</Source>
-		<IncomeHourly>28.793124999999996</IncomeHourly>
-		<IncomeDaily>164.53214285714284</IncomeDaily>
-		<IncomeWeekly>1151.725</IncomeWeekly>
-		<IncomeBiweekly>2303.45</IncomeBiweekly>
-		<IncomeMonthly>4606.9</IncomeMonthly>
-		<IncomeYearly>59889.7</IncomeYearly>
+		<IncomeHourly>31.68</IncomeHourly>
+		<IncomeDaily>181.02857142857144</IncomeDaily>
+		<IncomeWeekly>1267.2</IncomeWeekly>
+		<IncomeBiweekly>2534.4</IncomeBiweekly>
+		<IncomeMonthly>5611.885714285715</IncomeMonthly>
+		<IncomeYearly>66075.42857142857</IncomeYearly>
 		<TaxHourly>0.0</TaxHourly>
 		<TaxDaily>0.0</TaxDaily>
 		<TaxWeekly>0.0</TaxWeekly>
@@ -122,32 +35,20 @@
 		<HoursWorked>40.0</HoursWorked>
 	</IncomeSection>
 </Income>
-<OtherExpenses>
-	<ExpenseSection>
-		<Expense>Spotify</Expense>
-		<PaymentDaily>0.36065573770491804</PaymentDaily>
-		<PaymentWeekly>2.5384615384615383</PaymentWeekly>
-		<PaymentBiweekly>5.076923076923077</PaymentBiweekly>
-		<PaymentMonthly>11.0</PaymentMonthly>
-		<PaymentYearly>132.0</PaymentYearly>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Food</Expense>
-		<PaymentDaily>8.19672131147541</PaymentDaily>
-		<PaymentWeekly>57.69230769230769</PaymentWeekly>
-		<PaymentBiweekly>115.38461538461539</PaymentBiweekly>
-		<PaymentMonthly>250.0</PaymentMonthly>
-		<PaymentYearly>3000.0</PaymentYearly>
-	</ExpenseSection>
-	<ExpenseSection>
-		<Expense>Amazon Prime</Expense>
-		<PaymentDaily>0.3797814207650273</PaymentDaily>
-		<PaymentWeekly>2.673076923076923</PaymentWeekly>
-		<PaymentBiweekly>5.346153846153846</PaymentBiweekly>
-		<PaymentMonthly>11.583333333333334</PaymentMonthly>
-		<PaymentYearly>139.0</PaymentYearly>
-	</ExpenseSection>
-</OtherExpenses>
+<Savings>
+	<SavingsSection>
+		<Account>Marcus</Account>
+		<SavingsValue>53483.0</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>BOA Savings</Account>
+		<SavingsValue>10123.0</SavingsValue>
+	</SavingsSection>
+	<SavingsSection>
+		<Account>BOA Checking</Account>
+		<SavingsValue>11388.0</SavingsValue>
+	</SavingsSection>
+</Savings>
 <CarExpenses>
 	<ExpenseSection>
 		<Expense>Property Tax</Expense>
@@ -159,11 +60,11 @@
 	</ExpenseSection>
 	<ExpenseSection>
 		<Expense>Insurance</Expense>
-		<PaymentDaily>3.2783870967741935</PaymentDaily>
-		<PaymentWeekly>25.4075</PaymentWeekly>
-		<PaymentBiweekly>50.815</PaymentBiweekly>
-		<PaymentMonthly>101.63</PaymentMonthly>
-		<PaymentYearly>1219.56</PaymentYearly>
+		<PaymentDaily>4.032258064516129</PaymentDaily>
+		<PaymentWeekly>31.25</PaymentWeekly>
+		<PaymentBiweekly>62.5</PaymentBiweekly>
+		<PaymentMonthly>125.0</PaymentMonthly>
+		<PaymentYearly>1500.0</PaymentYearly>
 	</ExpenseSection>
 	<ExpenseSection>
 		<Expense>Gas</Expense>
@@ -174,3 +75,95 @@
 		<PaymentYearly>600.0</PaymentYearly>
 	</ExpenseSection>
 </CarExpenses>
+<OtherExpenses>
+	<ExpenseSection>
+		<Expense>Food</Expense>
+		<PaymentDaily>8.064516129032258</PaymentDaily>
+		<PaymentWeekly>62.5</PaymentWeekly>
+		<PaymentBiweekly>125.0</PaymentBiweekly>
+		<PaymentMonthly>250.0</PaymentMonthly>
+		<PaymentYearly>3000.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Discretionary</Expense>
+		<PaymentDaily>6.451612903225806</PaymentDaily>
+		<PaymentWeekly>50.0</PaymentWeekly>
+		<PaymentBiweekly>100.0</PaymentBiweekly>
+		<PaymentMonthly>200.0</PaymentMonthly>
+		<PaymentYearly>2400.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Phone</Expense>
+		<PaymentDaily>2.5806451612903225</PaymentDaily>
+		<PaymentWeekly>20.0</PaymentWeekly>
+		<PaymentBiweekly>40.0</PaymentBiweekly>
+		<PaymentMonthly>80.0</PaymentMonthly>
+		<PaymentYearly>960.0</PaymentYearly>
+	</ExpenseSection>
+</OtherExpenses>
+<HousingExpenses>
+	<ExpenseSection>
+		<Expense>Mortgage</Expense>
+		<PaymentDaily>47.76986301369863</PaymentDaily>
+		<PaymentWeekly>335.3076923076923</PaymentWeekly>
+		<PaymentBiweekly>670.6153846153846</PaymentBiweekly>
+		<PaymentMonthly>1453.0</PaymentMonthly>
+		<PaymentYearly>17436.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>HOA</Expense>
+		<PaymentDaily>9.863013698630137</PaymentDaily>
+		<PaymentWeekly>69.23076923076923</PaymentWeekly>
+		<PaymentBiweekly>138.46153846153845</PaymentBiweekly>
+		<PaymentMonthly>300.0</PaymentMonthly>
+		<PaymentYearly>3600.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Electric</Expense>
+		<PaymentDaily>6.435287671232877</PaymentDaily>
+		<PaymentWeekly>45.17076923076923</PaymentWeekly>
+		<PaymentBiweekly>90.34153846153846</PaymentBiweekly>
+		<PaymentMonthly>195.74</PaymentMonthly>
+		<PaymentYearly>2348.88</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Internet</Expense>
+		<PaymentDaily>3.6164383561643834</PaymentDaily>
+		<PaymentWeekly>25.384615384615383</PaymentWeekly>
+		<PaymentBiweekly>50.76923076923077</PaymentBiweekly>
+		<PaymentMonthly>110.0</PaymentMonthly>
+		<PaymentYearly>1320.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>TV</Expense>
+		<PaymentDaily>0.0</PaymentDaily>
+		<PaymentWeekly>0.0</PaymentWeekly>
+		<PaymentBiweekly>0.0</PaymentBiweekly>
+		<PaymentMonthly>0.0</PaymentMonthly>
+		<PaymentYearly>0.0</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Water</Expense>
+		<PaymentDaily>0.9593150684931506</PaymentDaily>
+		<PaymentWeekly>6.733653846153846</PaymentWeekly>
+		<PaymentBiweekly>13.467307692307692</PaymentBiweekly>
+		<PaymentMonthly>29.179166666666664</PaymentMonthly>
+		<PaymentYearly>350.15</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Sewage</Expense>
+		<PaymentDaily>0.5151780821917809</PaymentDaily>
+		<PaymentWeekly>3.616153846153846</PaymentWeekly>
+		<PaymentBiweekly>7.232307692307692</PaymentBiweekly>
+		<PaymentMonthly>15.67</PaymentMonthly>
+		<PaymentYearly>188.04</PaymentYearly>
+	</ExpenseSection>
+	<ExpenseSection>
+		<Expense>Gas</Expense>
+		<PaymentDaily>1.6486575342465752</PaymentDaily>
+		<PaymentWeekly>11.572307692307692</PaymentWeekly>
+		<PaymentBiweekly>23.144615384615385</PaymentBiweekly>
+		<PaymentMonthly>50.14666666666667</PaymentMonthly>
+		<PaymentYearly>601.76</PaymentYearly>
+	</ExpenseSection>
+</HousingExpenses>

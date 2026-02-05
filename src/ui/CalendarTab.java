@@ -295,6 +295,7 @@ public class CalendarTab extends Tab {
     	double total = savings + dailyTotal*daysAfterToday;
     	//System.out.println("Savings: " + savings);
     	//System.out.println("dailyTotal: " + dailyTotal);
+    	//System.out.println("daysAfterToday: " + daysAfterToday);
     	
     	return NumberFormatter.formatDoubleToCurrency(total);
     }
@@ -302,12 +303,14 @@ public class CalendarTab extends Tab {
     private long getDaysAfterToday(int day) {
     	long daysAfterToday = 0;
     	try {
-	    	LocalDate startDate = LocalDate.parse(realYear+"-"+parseDateValue(realMonth)+"-"+parseDateValue(realDay));
-	    	LocalDate endDate   = LocalDate.parse(currentYear+"-"+parseDateValue(currentMonth)+"-"+parseDateValue(day));
+	    	LocalDate startDate = LocalDate.parse(realYear+"-"+parseDateValue(realMonth+1)+"-"+parseDateValue(realDay));
+	    	LocalDate endDate   = LocalDate.parse(currentYear+"-"+parseDateValue(currentMonth+1)+"-"+parseDateValue(day));
+	    	//System.out.println("startDate: " + startDate);
+	    	//System.out.println("endDate: " + endDate);
 	    	daysAfterToday = ChronoUnit.DAYS.between(startDate,endDate);
     	}
     	catch(DateTimeParseException e) {
-    		//e.printStackTrace();
+    		e.printStackTrace();
     	}
     	
     	return daysAfterToday;

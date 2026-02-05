@@ -8,6 +8,7 @@ import calc.NumberFormatter;
 import file.XMLManager;
 import ref.Constants;
 import sheet.SheetManager;
+import ui.BudgetSection;
 import ui.BudgetTab;
 import ui.ValidatedTextBox;
 
@@ -69,7 +70,7 @@ public class SavingsTab extends BudgetTab {
 	}
 	
 	@Override
-	protected void updateSections() {		
+	protected void updateSections() {
 		boolean errored = false;
 		ArrayList<String> names = new ArrayList<String>();
 		for(SavingsSection section : savingsSections) {
@@ -93,6 +94,9 @@ public class SavingsTab extends BudgetTab {
 		}
 		
 		if(!errored) {
+			for(SavingsSection section : savingsSections) {
+				section.updateValuesToMatchTextFields(Constants.MONTHLY);
+			}
 			saveToXml();
 		}
 	}
@@ -117,6 +121,7 @@ public class SavingsTab extends BudgetTab {
 	
 	@Override
 	protected void saveToXml() {
+		System.out.println("saving savings");
 		ArrayList<String> saveXml = new ArrayList<String>();
 		for(SavingsSection savingsSection : savingsSections) {
 			ArrayList<String> savingsSectionXml = new ArrayList<String>();
@@ -128,6 +133,7 @@ public class SavingsTab extends BudgetTab {
 		}
 		saveXml = XMLManager.encapsulateInTag(Constants.SAVINGS, saveXml);
 		
+		System.out.println("saveXml: " + saveXml);
 		sheetManager.replaceSection(Constants.SAVINGS, saveXml);
 	}
 	
